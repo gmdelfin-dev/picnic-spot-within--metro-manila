@@ -34,19 +34,23 @@ H2 {
     text-align: center;
     font-size: 28px;
     color: #6F7655;
-    margin-top: 50px;
+    margin-top: 20px;
 }
 
-.profile-image {
-    width: 130px;
-    height: auto;
+.profile {
+    width: 120px;
+    height: 120px;
     object-fit: cover;
     border-radius: 50%;
 }
 
 .place-container {
-    width: 70%;
-    margin: 50px auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    width: 85%;
+    margin: 0 auto;
+    align-items: stretch;
 
 }
 
@@ -72,8 +76,10 @@ p {
 }
 
 .place-image {
-    width: 400px;
+    width: 100%;
     height: 250px;
     object-fit: cover;
     border-radius: 5px;
+    margin: 15px auto 0;
+    display: block;
 }
