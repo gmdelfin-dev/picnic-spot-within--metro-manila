@@ -1,0 +1,58 @@
+body {
+    margin: 0;
+    background-image: url("picnic.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: Georgia, "Times New Roman", serif;
+    color: #353431;
+}
+
+h1
+ {
+    margin-top: 60px;
+    font-size: 40px;
+    text-align: center;
+    color: #995e5e;
+
+}
+
+.tagline
+ {
+    text-align: center;
+    font-style: italic;
+    font-family: Georgia, "Times New Roman", serif;
+    color: #412d36;
+}
+
+.owner {
+    text-align: center;
+    font-style: italic;
+    font-family: Georgia, "Times New Roman", serif;
+    color: #543644;
+}
+
+.profile-image {
+    width: 140px;
+    height: auto;
+}
+
+.place-container {
+    width: 70%;
+    margin: 50px auto;
+}
+
+.place {
+    background-color: #e1d3d3;
+    border-radius: 10px;
+    padding: 25px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.place-image {
+    width: 80%;
+    max-width: 500px;
+    height: 250px;
+    object-fit: cover;
+}
