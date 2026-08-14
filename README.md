@@ -1,0 +1,1 @@
+# picnic-spot-within--metro-manila
