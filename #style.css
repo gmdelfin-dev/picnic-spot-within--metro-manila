@@ -1,53 +1,45 @@
 body {
     margin: 0;
-    background-image: url("picnic.jpg");
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+    background-color: #F5EEDC;
     font-family: Georgia, "Times New Roman", serif;
-    color: #353431;
+    color: #3D382F;
+    line-height: 1.5;
 }
 
-h1
- {
+h1{
+    text-align: center; 
     margin-top: 60px;
+    margin-bottom: 10px;
     font-size: 40px;
-    text-align: center;
-    color: #995e5e;
-
+    color: #3D382F;
 }
 
-.tagline
- {
+.tagline{
     text-align: center;
     font-style: italic;
     font-size: 18px;
-    font-family: Georgia, "Times New Roman", serif;
-    color: #412d36;
+    color: #5B554A;
 }
 
 .owner {
-    text-align: center;
-    font-style: italic;
-    font-family: Georgia, "Times New Roman", serif;
-    color: #543644;
     width: 60%;
-    margin: 50px auto;
+    margin: 40px auto;
     padding: 25px;
-    background-color: #9c6e76;
+    background-color: #FFF9E8;
+    text-align: center;
     border-radius: 10px;
 }
 
 H2 {
     text-align: center;
     font-size: 28px;
-    color: #995e5e;
+    color: #6F7655;
     margin-top: 50px;
 }
 
 .profile-image {
-    width: 140px;
-    height: auto;
+    width: 130px;
+    height: 130px;
     object-fit: cover;
     border-radius: 50%;
 }
@@ -59,22 +51,24 @@ H2 {
 }
 
 .place {
-   margin-bottom: 50px;
+   margin-bottom: 40px;
     padding: 30px;
-    background-color: #e3c7c7;
+    background-color: #FFF9E8;
     text-align: center;
     border-radius: 10px;
 }
+
 h3 {
-    font-size: 24px;
-    margin-bottom: 10px;
-    color: #353431;
+    margin-top: 0;
+    font-size: 28px;
+    color: #A85C4A;
 }
 
 p {
-    font-size: 18px;
-    margin: 5px 0;
-    color: #543644;
+    text-align: center;
+    font-style: italic;
+    font-size: 17px;
+    color: #4A453D;
 }
 
 .place-image {
