@@ -39,7 +39,7 @@ H2 {
 
 .profile-image {
     width: 130px;
-    height: 130px;
+    height: auto;
     object-fit: cover;
     border-radius: 50%;
 }
