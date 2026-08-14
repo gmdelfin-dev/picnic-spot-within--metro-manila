@@ -21,6 +21,7 @@ h1
  {
     text-align: center;
     font-style: italic;
+    font-size: 18px;
     font-family: Georgia, "Times New Roman", serif;
     color: #412d36;
 }
@@ -30,24 +31,50 @@ h1
     font-style: italic;
     font-family: Georgia, "Times New Roman", serif;
     color: #543644;
+    width: 60%;
+    margin: 50px auto;
+    padding: 25px;
+    background-color: #9c6e76;
+    border-radius: 10px;
+}
+
+H2 {
+    text-align: center;
+    font-size: 28px;
+    color: #995e5e;
+    margin-top: 50px;
 }
 
 .profile-image {
     width: 140px;
     height: auto;
+    object-fit: cover;
+    border-radius: 50%;
 }
 
 .place-container {
     width: 70%;
     margin: 50px auto;
+
 }
 
 .place {
-    background-color: #e1d3d3;
-    border-radius: 10px;
-    padding: 25px;
-    margin-bottom: 40px;
+   margin-bottom: 50px;
+    padding: 30px;
+    background-color: #e3c7c7;
     text-align: center;
+    border-radius: 10px;
+}
+h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #353431;
+}
+
+p {
+    font-size: 18px;
+    margin: 5px 0;
+    color: #543644;
 }
 
 .place-image {
