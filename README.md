@@ -2,4 +2,4 @@
 
 Web Development  
 
-Live site: 
+Live site: https://gmdelfin-dev.github.io/picnic-spot-within--metro-manila/
