@@ -1,8 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Picnic Spots within Metro Manila</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Picnic Spots within Metro Manila</title>  
+
+  <style>
+    body {
+    margin: 0;
+    background-color: #F5EEDC;
+    font-family: Georgia, "Times New Roman", serif;
+    color: #3D382F;
+    line-height: 1.5;
+    }
+
+    h1{
+    text-align: center; 
+    margin-top: 60px;
+    margin-bottom: 10px;
+    font-size: 40px;
+    color: #3D382F;
+    }
+
+   .tagline{
+    text-align: center;
+    font-style: italic;
+    font-size: 18px;
+    color: #5B554A;
+  }
+
+    .owner {
+    width: 60%;
+    margin: 40px auto;
+    padding: 25px;
+    background-color: #FFF9E8;
+    text-align: center;
+    border-radius: 10px;
+    }
+
+    H2 {
+    text-align: center;
+    font-size: 28px;
+    color: #6F7655;
+    margin-top: 20px;
+    }
+
+    .profile {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    }
+
+    .place-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    width: 85%;
+    margin: 0 auto;
+    align-items: stretch;
+    }
+
+    .place {
+    margin-bottom: 40px;
+    padding: 30px;
+    background-color: #FFF9E8;
+    text-align: center;
+    border-radius: 10px;
+    }
+
+    h3 {
+    margin-top: 0;
+    font-size: 28px;
+    color: #A85C4A;
+    }
+
+    p {
+    text-align: center;
+    font-style: italic;
+    font-size: 17px;
+    color: #4A453D;
+    }
+
+   .place-image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin: 15px auto 0;
+    display: block;
+     }
+
+  </style>
 </head>
 
 <body>
@@ -15,10 +102,10 @@
 
 <section class= "owner" id="owner">
     <h2>Glayza Mae S. Delfin</h2>
-    <img src="profile.jpg" alt="profile" class="profile">
     <p class = "tagline">
         Allow me to show you lovely corners of Metro Manila,
-         where you can slow down and rest.</p>
+        where you can slow down and rest.</p>
+   <img src="profile.jpg" alt="profile" class="profile">
 </section>  
 
 <br>
@@ -26,7 +113,7 @@
 <div class="place-container" id="place-container">
 
 <article class= "place">
-    <h3></h3>Ayala Triangle Gardens</h3>
+    <h3>Ayala Triangle Gardens</h3>
          <p>8777 Paseo de Roxas, Makati, Metro Manila·</p>
          <p>If the city has left you a little tired, perhaps you could spend some time here. 
           Ayala has its quiet corners where you can sit, have a little picnic, and simply watch the world pass by.</p>
