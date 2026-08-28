@@ -20,15 +20,64 @@
 </header>
   
 <main>
-    <article class= "place">
-       <a href="https://www.ayalatriangle.com/gardens">
-               <h3>Ayala Triangle Gardens</h3>
-       </a>
-       <p>8777 Paseo de Roxas, Makati, Metro Manila·</p>
-       <p>If the city has left you a little tired, perhaps you could spend some time here. 
-          Ayala has its quiet corners where you can sit, have a little picnic, and simply watch the world pass by.</p>
+  <article class= "place">
+       <h1>Ayala Triangle Garden</h1>
+      <p>Official page:</p> 
+       <a href="https://www.ayalatriangle.com/gardens"> https://www.ayalatriangle.com/gardens</a>
+       <p> I recommend this place for anyone who wants to have a simple picnic, take a quiet walk, or spend
+          some time outdoors. Its greenery and open spaces make it a pleasant place to sit, enjoy your food, 
+          and simply watch the world pass by. 
+      </p>
   </article> 
    <img src="../Ayala-triangle-garden.jpg" alt="ayala">
+
+
+   <table class="table"> 
+     <tr>
+       <th>Address</th>
+       <td>8777 Paseo de Roxas, Makati, Metro Manila</td> 
+    </tr>
+     <tr> 
+      <th>Opening Hours</th>
+       <td>6:00 AM - 10:00 PM</td>
+    </tr>
+     <tr> 
+       <th>Price Range</th> 
+       <td>Free admission</td>
+    </tr> 
+     <tr> 
+       <th>Best Time to Visit</th>
+       <td>Late afternoon</td> 
+    <tr>
+      <th>Pet Friendly</th>
+      <td>Yes</td>
+    </tr> 
+  </table>
+
+  <fieldset>
+    <legend>Have you discovered a place worth sharing?</legend> 
+    <label for="place-name">What is the name of the place?</label> 
+      <input type="text" id="place-name" name="place-name" required placeholder="Enter the place name"> 
+   <hr>   
+    <legend>What kind of place is it?</legend> 
+    <label for="garden"> 
+      <input type="radio" id="garden" name="category" value="garden"> Garden </label>
+    <label for="park"> 
+      <input type="radio" id="park" name="category" value="park"> Park </label> 
+    <label for="historical">
+      <input type="radio" id="historical" name="category" value="historical"> Historical Ground </label>
+   <hr>
+    <legend>What makes this place worth visiting?</legend>
+    <label for="affordable"> 
+      <input type="checkbox" id="affordable" name="good-points" value="affordable"> Affordable or Free </label> 
+    <label for="quiet"> 
+      <input type="checkbox" id="quiet" name="good-points" value="quiet"> Quiet and Peaceful </label> 
+   <hr>
+    <legend>Where may we reach you?</legend>
+    <label for="email">
+     <input type="email" id="email" name="email" required placeholder="Enter your email address"> </label> 
+     <button type="submit">Send recommendation</button> 
+  </fieldset>
 </main>
 
 <footer>
