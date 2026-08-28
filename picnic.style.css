@@ -186,13 +186,13 @@ p {
 }
 
  .form {
-       width: 60%;
+    width: 60%;
     margin: 30px auto;
     padding: 25px;
     background-color: #FFF9E8;
     color: #4f4b3e;
     border: 2px solid #D8CEB8;
-    border-radius: 8px;
+    border-radius: 10px;
     box-sizing: border-box;
     text-align: center;
 }
@@ -203,6 +203,21 @@ p {
     height: 2rem;
     height: 2rem;
     font-weight: 200px;
-    color: #4f4b3e;
+    color: #699969;
     border-radius: 50%;
+}
+
+table {
+    margin: 30px auto;
+    background-color: #FFF9E8;
+    border-radius: 10px;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+th, 
+tr{
+    padding: 15px 35px;
+    border: 2px solid #D8CEB8;
+    color:#699969;
 }
