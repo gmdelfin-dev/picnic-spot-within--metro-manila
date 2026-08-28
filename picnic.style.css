@@ -186,7 +186,7 @@ p {
 }
 
  .form {
-    width: 60%;
+       width: 60%;
     margin: 30px auto;
     padding: 25px;
     background-color: #FFF9E8;
@@ -195,8 +195,8 @@ p {
     border-radius: 8px;
     box-sizing: border-box;
     text-align: center;
- }
- 
+}
+   
 .ayala{
     background-color: #D8CEB8;
     text-decoration: none;
