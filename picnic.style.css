@@ -1,36 +1,59 @@
- body {
+ /* my color palette (variables) */
+ :root {
+     --brand-color: #A85C4A;
+    --dark-ink: #3D382F;
+    --muted-grey: #5B554A;
+    --light-background: #F5EEDC;
+
+    --card-background: #FFF9E8;
+    --border-color: #D8CEB8;
+    --nav-green: #50755B;
+    --dark-green: #16401b;
+    --light-green: #699969;
+    --paragraph-color: #4A453D;
+}
+ 
+ /* my base styles */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
     margin: 0;
-    background-color: #F5EEDC;
+    background-color: var(--light-background);
     font-family: Georgia, "Times New Roman", serif;
-    color: #3D382F;
+    color: var(--dark-ink);
     line-height: 1.5;
     text-align: center; 
 }
 
-h1{
+/* my picnic spot's layout regions */
+
+h1 {
     margin-top: 60px;
     margin-bottom: 10px;
     font-size: 40px;
-    color: #3D382F;
+    color: var(--dark-ink);
 }
 
-.tagline{
+.tagline {
     text-align: center;
     font-style: italic;
     font-size: 18px;
-    color: #5B554A;
+    color: var(--muted-grey);
 }
 
 nav {
     margin: 25px auto 0;
     padding-bottom: 15px;
-    border-bottom: 1px solid #16401b;
+    border-bottom: 1px solid var(--dark-green);
     width: 70%;
 }
 
 nav ul {
     list-style-type: none;
-    padding: 0;
+    padding: 16px 0;
     margin: 0;
     display: flex;
     justify-content: center;
@@ -42,7 +65,7 @@ nav li {
 }
 
 nav a {
-    color: #50755b;
+    color: var(--nav-green);
     text-decoration: none;
     font-family: Georgia, "Times New Roman", serif;
     font-size: 17px;
@@ -50,15 +73,17 @@ nav a {
 }
 
 nav a:hover {
-    color: #A85C4A;
+    color: var(--brand-color);
 }
 
+
+/* my owner's page */
 .owner {
     width: 60%;
     margin: 40px auto;
     padding: 25px;
-    background-color: #FFF9E8;
-    border: 2px solid #D8CEB8;
+    background-color: var(--card-background);
+    border: 2px solid var(--border-color);
     border-radius: 10px;
     text-align: center;
 }
@@ -67,7 +92,7 @@ h2 {
     text-align: center;
     font-size: 28px;
     font-style: italic;
-    color: #3D382F;
+    color: var(--dark-ink);
     margin-top: 20px;
 }
 
@@ -78,6 +103,7 @@ h2 {
     border-radius: 50%;
 }
 
+/* my picnic spot's components */
 .place-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -87,11 +113,12 @@ h2 {
     align-items: stretch;
 }
 
+/* my picnic spot's cards */
 .place {
     margin-bottom: 40px;
     padding: 30px;
-    background-color: #FFF9E8;
-    border: 2px solid #D8CEB8;
+    background-color: var(--card-background);
+    border: 2px solid var(--border-color);
     text-align: center;
     border-radius: 10px;
 }
@@ -99,14 +126,14 @@ h2 {
 h3 {
     margin-top: 0;
     font-size: 28px;
-    color: #A85C4A;
+    color: var(--brand-color);
 }
 
 p {
     text-align: center;
     font-style: italic;
     font-size: 17px;
-    color: #4A453D;
+    color: var(--paragraph-color);
 }
 
 .place-image {
@@ -118,106 +145,174 @@ p {
     display: block;
 }
 
-.why {
-    width: 70%;
-    max-width: 900px;
-    margin: 30px auto;
-    padding: 30px;
-    background-color: #FFF9E8;
-    border: 2px solid #D8CEB8;
-    border-radius: 10px;
-    box-sizing: border-box;
-}
-
-.why p {
-    margin: 0;
-    text-align: justify;
-    font-size: 17px;
-    font-style: normal;
-    color: #4A453D;
-}
-
-.what {
-    width: 70%;
-    max-width: 900px;
-    margin: 30px auto;
-    padding: 30px;
-    background-color: #FFF9E8;
-    border: 2px solid #D8CEB8;
-    border-radius: 10px;
-    box-sizing: border-box;
-}
-
-.what p {
-    margin: 0;
-    text-align: justify;
-    font-size: 17px;
-    font-style: normal;
-    color: #4A453D;
-}
-
-.contact {
-    width: 60%;
-    margin: 30px auto;
-    padding: 25px;
-    background-color: #FFF9E8;
-    color: #4f4b3e;
-    border: 2px solid #D8CEB8;
-    border-radius: 8px;
-    box-sizing: border-box;
-    text-align: center;
-}
-
-.contact p {
-    color: #4f4b3e;
-    font-size: 16px;
-    line-height: 1.5;
-}
-
-.contact ul {
-    list-style-type: none;
-    padding: 0;
-    line-height: 2;
-}
-
-.contact a {
-    color: #4f4b3e;
-    text-decoration: none;
-}
-
- .form {
-    width: 60%;
-    margin: 30px auto;
-    padding: 25px;
-    background-color: #FFF9E8;
-    color: #4f4b3e;
-    border: 2px solid #D8CEB8;
-    border-radius: 10px;
-    box-sizing: border-box;
-    text-align: center;
-}
-   
-.ayala{
-    background-color: #D8CEB8;
-    text-decoration: none;
-    height: 2rem;
-    height: 2rem;
-    font-weight: 200px;
-    color: #699969;
-    border-radius: 50%;
-}
+/* my detail's table */
 
 table {
     margin: 30px auto;
-    background-color: #FFF9E8;
+    background-color: var(--card-background);
     border-radius: 10px;
     border-collapse: collapse;
     text-align: center;
 }
 
-th, 
-tr{
-    padding: 15px 35px;
-    border: 2px solid #D8CEB8;
-    color:#699969;
+th,
+td {
+    padding: 16px 35px;
+    border: 2px solid var(--border-color);
+    color: var(--light-green);
+}
+
+/* my about page*/
+
+.why {
+    width: 70%;
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 30px;
+    background-color: var(--card-background);
+    border: 2px solid var(--border-color);
+    border-radius: 10px;
+}
+
+.why p{
+    margin: 0;
+    text-align: justify;
+    font-size: 17px;
+    font-style: normal;
+    color:var(--paragraph-color);
+}
+
+.what { 
+    width: 70%;
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 30px;
+    background-color: var(--card-background);
+    border: 2px solid var(--border-color);
+    border-radius: 10px;
+}
+
+.what p{
+    margin: 0;
+    text-align: justify;
+    font-size: 17px;
+    font-style: normal;
+    color:var(--paragraph-color);
+}
+
+/* my contact page */
+
+.contact {
+    width: 60%;
+    margin: 30px auto;
+    padding: 25px;
+    background-color: var(--card-background);
+    color: var(--paragraph-color);
+    border: 2px solid var(--border-color);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.contact p {
+    color: var(--paragraph-color);
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.contact ul {
+    list-style: none;
+    padding: 0;
+    line-height: 2;
+}
+
+.contact a {
+    color: var(--paragraph-color);
+    text-decoration: none;
+}
+
+/* my information form */
+.form {
+    width: 60%;
+    margin: 30px auto;
+    padding: 25px;
+    background-color: var(--card-background);
+    color: var(--paragraph-color);
+    border: 2px solid var(--border-color);
+    border-radius: 8px;
+}
+
+.form legend {
+    margin-top: 0;
+    color: var(--brand-color);
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.form input,
+.form textarea{
+    width: 60%;
+    padding: 16px;
+    margin-bottom: 15px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+.form button {
+    background-color: var(--brand-color);
+    color: var(--light-background);
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.form input:focus,
+.form textarea:focus {
+    outline: 3px solid var(--brand-color);
+    outline-offset: 2px;
+}
+
+/* my suggestion form */
+
+.suggestion-form {
+    width: 60%;
+    margin: 30px auto;
+    padding: 25px;
+    background-color: var(--card-background);
+    color: var(--paragraph-color);
+    border: 2px solid var(--border-color);
+    border-radius: 8px;
+}
+
+.suggestion-form legend {
+    margin-top: 0;
+    color: var(--brand-color);
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.suggestion-form input,
+.suggestion-form textarea {
+    width: 60%;
+    padding: 16px;
+    margin-bottom: 15px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+.suggestion-form button {
+    background-color: var(--brand-color);
+    color: var(--light-background);
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.suggestion-form input:focus,
+.suggestion-form textarea:focus {
+    outline: 3px solid var(--brand-color);
+    outline-offset: 2px;
 }
