@@ -251,12 +251,12 @@ td {
 
 .form input,
 .form textarea{
-    width: 60%;
     padding: 16px;
     margin-bottom: 15px;
     border: 1px solid var(--border-color);
     border-radius: 4px;
     font-family: Georgia, "Times New Roman", serif;
+    text-align: center;
 }
 
 .form button {
@@ -276,7 +276,7 @@ td {
 /* my suggestion form */
 
 .suggestion-form {
-    width: 60%;
+    width: 70%;
     margin: 30px auto;
     padding: 25px;
     background-color: var(--card-background);
@@ -295,12 +295,12 @@ td {
 
 .suggestion-form input,
 .suggestion-form textarea {
-    width: 60%;
     padding: 16px;
     margin-bottom: 15px;
     border: 1px solid var(--border-color);
     border-radius: 4px;
     font-family: Georgia, "Times New Roman", serif;
+    text-align: center;
 }
 
 .suggestion-form button {
