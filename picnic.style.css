@@ -309,7 +309,7 @@ td {
     padding: 16px 20px;
     border: none;
     cursor: pointer;
-}
+}  
 
 .suggestion-form input:focus,
 .suggestion-form textarea:focus {

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Fort Santiago - Place2</title>
+    <link rel="stylesheet" href="../picnic.style.css">
+</head>
+<body>
+
+<header class="header" id="header">
+      <h1>Picnic Spots within Metro Manila</h1>
+      <p class = "tagline">
+      "A place where you can rest, a silent sanctuary."</p>
+    <nav>
+       <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../about.picnic.html">About</a></li>
+        <li><a href="../contact.picnic.html">Contact</a></li>
+       </ul>
+    </nav>
+</header>
+  
+<main>
+  <article class= "place">
+       <h1>Fort Santiago</h1>
+      <p>Official page:</p> 
+       <a href="https://intramuros.gov.ph/fs/"> https://intramuros.gov.ph/fs/</a>
+       <p> I recommend this place for anyone who wants to have a simple picnic, take a quiet walk, or spend
+          some time outdoors. Its historic grounds and quiet corners make it a pleasant place to sit, enjoy your food, 
+          and simply watch the world pass by.
+      </p>
+       <p>
+          Note: The opening hours may vary depending on the season and special events.
+         It is advisable to check the official website or contact the management for the most up-to-date information.
+      </p>
+  </article> 
+
+   <img src="../Fort-Santiago.jpg" alt="fort-santiago">
+
+   <table class="table"> 
+     <tr>
+       <th>Address</th>
+       <td>1002 Mel Lopez Boulevard, Manila, Metro Manila </td> 
+    </tr>
+
+     <tr> 
+      <th>Opening Hours</th>
+       <td>weekdays: 8:00 AM to 10:00 PM 
+    <br>
+        weekends: 6:00 AM to 10:00 PM</td>
+    </tr>
+
+     <tr> 
+       <th>Price Range</th> 
+       <td>₱75 regular / ₱50 students, seniors, and PWDs</td>
+    </tr> 
+
+     <tr> 
+       <th>Best Time to Visit</th>
+       <td>Late afternoon</td> 
+    </tr>
+
+    <tr>
+      <th>Pet Friendly</th>
+      <td>Yes</td>
+    </tr> 
+  </table>
+
+  <form class = "suggestion-form">
+  <fieldset>
+    <legend>Have you discovered a place worth sharing?</legend> 
+    <label for="place-name">What is the name of the place?</label> 
+      <input type="text" id="place-name" name="place-name" required placeholder="Enter the place name"> 
+   <hr>   
+    <legend>What kind of place is it?</legend> 
+    <label for="garden"> 
+      <input type="radio" id="garden" name="category" value="garden"> Garden </label>
+    <label for="park"> 
+      <input type="radio" id="park" name="category" value="park"> Park </label> 
+    <label for="historical">
+      <input type="radio" id="historical" name="category" value="historical"> Historical Ground </label>
+   <hr>
+    <legend>What makes this place worth visiting?</legend>
+    <label for="affordable"> 
+      <input type="checkbox" id="affordable" name="good-points" value="affordable"> Affordable or Free </label> 
+    <label for="quiet"> 
+      <input type="checkbox" id="quiet" name="good-points" value="quiet"> Quiet and Peaceful </label> 
+   <hr>
+    <legend>Where may we reach you?</legend>
+    <label for="email">
+     <input type="email" id="email" name="email" required placeholder="Enter your email address"> </label> 
+     <button type="submit">Send recommendation</button> 
+  </fieldset>
+  </form> 
+</main>
+
+<footer>
+  <p> &copy; 2026 Picnic Spots within Metro Manila</p>
+</footer>
+
+</body>
+</html>
