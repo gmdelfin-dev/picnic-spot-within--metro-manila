@@ -29,12 +29,33 @@ body {
 }
 
 /* my picnic spot's layout regions */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 20px;
+    border-bottom: 2px solid var(--brand-color);
+    margin-bottom: 40px;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.Logo {
+     width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+}
 
 h1 {
-    margin-top: 60px;
+    margin-top: 25px;
     margin-bottom: 10px;
     font-size: 40px;
-    color: var(--dark-ink);
+    color: var(--dark-green);
 }
 
 .tagline {
@@ -45,23 +66,19 @@ h1 {
 }
 
 nav {
-    margin: 25px auto 0;
-    padding-bottom: 15px;
-    border-bottom: 1px solid var(--dark-green);
-    width: 70%;
+    padding-bottom: 35px;
 }
 
 nav ul {
-    list-style-type: none;
-    padding: 16px 0;
-    margin: 0;
     display: flex;
-    justify-content: center;
-    gap: 35px;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 nav li {
-    display: inline;
+    margin: 0;
 }
 
 nav a {
@@ -105,20 +122,20 @@ h2 {
 
 /* my picnic spot's components */
 .place-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
     width: 85%;
     margin: 0 auto;
-    align-items: stretch;
 }
 
 /* my picnic spot's cards */
 .place {
-    margin-bottom: 40px;
-    padding: 30px;
+    flex: 1 1 240px;
+    margin: 0;
     background-color: var(--card-background);
     border: 2px solid var(--border-color);
+    padding: 25px;
     text-align: center;
     border-radius: 10px;
 }
