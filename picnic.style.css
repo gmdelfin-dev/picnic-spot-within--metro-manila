@@ -29,19 +29,32 @@ body {
 }
 
 /* my picnic spot's layout regions */
-header {
+.page {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "masthead"
+        "side"
+        "main"
+        "foot";
+    gap: 16px;
+}
+
+.header {
+    grid-area: masthead;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 40px 20px;
+   padding: 25px 15px;
     border-bottom: 2px solid var(--brand-color);
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 
 .header-content {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    gap: 15px;
+    gap: 10px;
 }
 
 .Logo {
@@ -54,7 +67,7 @@ header {
 h1 {
     margin-top: 25px;
     margin-bottom: 10px;
-    font-size: 40px;
+    font-size: 30px;
     color: var(--dark-green);
 }
 
@@ -66,12 +79,13 @@ h1 {
 }
 
 nav {
-    padding-bottom: 35px;
+    padding-bottom: 10px;
 }
 
 nav ul {
     display: flex;
-    gap: 20px;
+    flex-direction: column;
+    gap: 10px;
     list-style: none;
     padding: 0;
     margin: 0;
@@ -93,10 +107,60 @@ nav a:hover {
     color: var(--brand-color);
 }
 
+aside {
+    grid-area: side;
+    background-color: var(--card-background);
+    color: var(--paragraph-color);
+    padding: 20px;
+    border: 2px solid var(--border-color);
+    border-radius: 10px;
+    text-align: left;
+}
+
+aside h2 {
+    margin-top: 0;
+    font-size: 24px;
+    color: var(--dark-green);
+    text-align: center;
+}
+
+aside p {
+    font-size: 15px;
+    line-height: 1.5;
+    text-align: center;
+    font-style: italic;
+}
+
+aside ul {
+    padding-left: 20px;
+    margin-top: 0;
+}
+
+aside li {
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 1.4;
+    color: var(--paragraph-color);
+}
+
+main {
+    grid-area: main;
+    width: 100%;
+    margin: 0 auto;
+}
+
+footer {
+    grid-area: foot;
+    margin-top: 40px;
+    padding: 20px;
+    border-top: 1px solid var(--brand-color);
+    font-size: 14px;
+}
+
 
 /* my owner's page */
 .owner {
-    width: 60%;
+    width: 90%;
     margin: 40px auto;
     padding: 25px;
     background-color: var(--card-background);
@@ -124,8 +188,8 @@ h2 {
 .place-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 24px;
-    width: 85%;
+    gap: 10px;
+    width: 95%;
     margin: 0 auto;
 }
 
@@ -174,7 +238,7 @@ table {
 
 th,
 td {
-    padding: 16px 35px;
+    padding: 10px 15px;
     border: 2px solid var(--border-color);
     color: var(--light-green);
 }
@@ -182,7 +246,7 @@ td {
 /* my about page*/
 
 .why {
-    width: 70%;
+    width: 90%;
     max-width: 900px;
     margin: 30px auto;
     padding: 30px;
@@ -200,7 +264,7 @@ td {
 }
 
 .what { 
-    width: 70%;
+    width: 90%;
     max-width: 900px;
     margin: 30px auto;
     padding: 30px;
@@ -220,7 +284,7 @@ td {
 /* my contact page */
 
 .contact {
-    width: 60%;
+    width: 90%;
     margin: 30px auto;
     padding: 25px;
     background-color: var(--card-background);
@@ -249,7 +313,7 @@ td {
 
 /* my information form */
 .form {
-    width: 60%;
+    width: 90%;
     margin: 30px auto;
     padding: 25px;
     background-color: var(--card-background);
@@ -293,7 +357,7 @@ td {
 /* my suggestion form */
 
 .suggestion-form {
-    width: 70%;
+    width: 90%;
     margin: 30px auto;
     padding: 25px;
     background-color: var(--card-background);
@@ -333,3 +397,66 @@ td {
     outline: 3px solid var(--brand-color);
     outline-offset: 2px;
 }
+
+/* For the Tablet and desktop layout */
+@media (min-width: 700px) {
+
+    .page {
+        grid-template-columns: 220px 1fr;
+        grid-template-areas:
+            "masthead masthead"
+            "side main"
+            "foot foot";
+        gap: 16px;
+    }
+
+    .header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 40px 20px;
+    }
+
+    .header-content {
+        flex-direction: row;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .Logo {
+        width: 170px;
+        height: 170px;
+    }
+
+    h1 {
+        font-size: 45px;
+    }
+
+    nav ul {
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    nav {
+        padding-bottom: 35px;
+    }
+
+    .place-container {
+        width: 85%;
+        gap: 24px;
+    }
+
+    .owner,
+    .contact,
+    .form,
+    .suggestion-form {
+        width: 70%;
+    }
+
+    .why,
+    .what {
+        width: 70%;
+    }
+}
+
+    
