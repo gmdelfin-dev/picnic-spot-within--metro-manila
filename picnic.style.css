@@ -212,7 +212,6 @@ h3 {
 
 p {
     text-align: center;
-    font-style: italic;
     font-size: 17px;
     color: var(--paragraph-color);
 }
@@ -450,12 +449,12 @@ td {
     .contact,
     .form,
     .suggestion-form {
-        width: 70%;
+        width: 65%;
     }
 
     .why,
     .what {
-        width: 70%;
+        width: 65%;
     }
 }
 
